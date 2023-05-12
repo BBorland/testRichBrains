@@ -1,3 +1,4 @@
+<?php
 function getCornersCount(string ...$shapeName)
 {
     $results = [];
@@ -5,13 +6,13 @@ function getCornersCount(string ...$shapeName)
         $name = strtolower($name);
         switch ($name) {
             case 'square':
-                $results[] = "квадрат - 4";
+                $results[] = "square - 4";
                 break;
             case 'circle':
-                $results[] = "круг - 0";
+                $results[] = "circle - 0";
                 break;
             case 'triangle':
-                $results[] = "треугольник - 3";
+                $results[] = "triangle - 3";
                 break;
             default:
                 $results[] = "$name - not defined";
